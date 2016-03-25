@@ -33,7 +33,7 @@ end
 
 module type HASH = sig
   include EQ
-  val hash_fun : t -> int64 -> int64
+  val hash_fun : t CCHash.hash_fun
   val hash : t -> int
 end
 
